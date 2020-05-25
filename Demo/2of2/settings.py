@@ -1,17 +1,17 @@
 #Global settings variables for easy management
 
 #List of the databases you are using
-DBS = ["face", "qr", "voice", "web"]
+DBS = ["voice", "web"]
 
 #The identity of this node, should be auth or one of the database names
 ID = 'auth'
 
 #The total number of nodes in this system
-TOTAL = 4
+TOTAL = 2
 
 #The number of shares that need to be sent to authenticate a user successfully
 #Changing this number will break an active system. After changing you must regenerate shares for all users.
-THRESH = 3
+THRESH = 2
 
 #Directory locations
 DBdir = "../assets/DBs/"
