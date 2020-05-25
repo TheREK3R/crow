@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:latest
 
 #Install and configure nesecary tools
 RUN apt update 

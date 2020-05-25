@@ -38,15 +38,15 @@ services:
             context: ../../../
             dockerfile: crow/Demo/3of4/Dockerfile
             args:
-                ID: face
-        hostname: face
+                ID: auth
+        hostname: ui
         ports:
             - "44440:22"
         networks: 
             - bridge
         volumes:
             - hosts:/app/crow/shamir/assets/hosts
-            - face:/app/crow/shamir/assets
+            - ui:/app/crow/shamir/assets
     qr: 
         build:
             context: ../../../
@@ -96,7 +96,7 @@ volumes:
     auth1:
     auth2:
     web:
-    face:
+    ui:
     qr:
     hosts:
     voice:
