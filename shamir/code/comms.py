@@ -23,7 +23,7 @@ def initialize_db():
     )
 
     c.execute("CREATE TRIGGER IF NOT EXISTS tally_ins AFTER INSERT ON nodes BEGIN " + 
-        "REPLACE INTO totals VALUES(new.type, (SELECT COUNT(*) FROM nodes WHERE type = new.type)); +
+        "REPLACE INTO totals VALUES(new.type, (SELECT COUNT(*) FROM nodes WHERE type = new.type));" +
         "REPLACE INTO totals VALUES(old.type, (SELECT COUNT(*) FROM nodes WHERE type = old.type)); END;"
     )
 
