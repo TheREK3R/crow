@@ -25,4 +25,4 @@ COMMS_ADDR = '224.3.29.2'
 COMMS_PORT = 13338
 
 #Number of seconds between network updates
-UPDATE_INTERVAL = 100
+UPDATE_INTERVAL = 60
